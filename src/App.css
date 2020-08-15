@@ -1,0 +1,116 @@
+.App{
+  width: 100vw;
+  height: 100vh;
+}
+p{
+  margin: 0;
+}
+.roboto-family{
+  font-family: "Roboto",sans-serif; 
+}
+.flex-column{
+  flex-direction: column;
+}
+.flex-between{
+  justify-content: space-between;
+}
+.flex-end{
+  justify-content: flex-end;
+}
+.flex{
+  display: flex;
+}
+.flex-center{
+  justify-content: center;
+}
+.align-center{
+  align-items: center;
+}
+.App-form{
+    padding: 2rem;
+    width: 35rem;
+    box-shadow: inset #ccc 2px -1px 6px 0px;
+}
+.logo{
+  margin-bottom: 1rem;
+}
+.logo a{
+  outline: none;
+}
+.App-form > div {
+  margin-bottom: 1rem;
+}
+.App-form > div label {
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #262861;
+  cursor: pointer;
+}
+.App-form > div > input {
+  border: 2px solid #262861;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  outline: none;
+  transition: border 0.15s ease-in-out;
+}
+.App-form > div .invalidInput{
+  border: 2px solid #e60000 !important;
+}
+.App-form > div:last-child{
+  margin-bottom: 0;
+}
+.App-form > div > input:focus{
+  border: 2px solid #6138d8 ;
+}
+input::placeholder {
+  color: #262861;
+  opacity: 0.5;
+}
+.submit-btn{
+    border: none;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    background: rgba(97, 56, 216,0.9);
+    border-radius: 4px;
+    margin-top: 1rem;
+    outline: none;
+    transition: all 0.1s ease-in-out;
+    backface-visibility: visible;
+    font-size: 1rem ;
+    font-weight: 700 ;
+    transform-origin: bottom;
+}
+.submit-btn:disabled{
+  opacity: 0.6;
+}
+.submit-btn:focus:enabled,.submit-btn:hover:enabled{
+  background: rgba(97, 56, 216,1);
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: #ccbff2 0px 2px 4px 1px;
+}
+.submit-btn:active{
+  transform: scale(1);
+  box-shadow: #ccbff2 0px 0px 0px 0px;
+}
+.eyes{
+  height:1rem;
+  transform:scale(1.5) ;
+  transform-origin: right;
+  cursor: pointer;
+}
+.error-text{
+  color: #e60000 ;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+span .error-text{
+  margin-right: 1rem;
+}
+.visible{
+  visibility: visible;
+}
+.hidden{
+  visibility: hidden;
+}
